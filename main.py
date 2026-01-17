@@ -10,6 +10,7 @@ from PyQt5.QtGui import QIcon, QPainter, QColor
 import requests
 from faker import Faker
 from form import parse_form_entries
+import resources
 
 fake = Faker('vi_VN')
 
@@ -115,7 +116,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Google Form Auto Submit Tool")
-        self.setWindowIcon(QIcon('icon.ico'))
+        self.setWindowIcon(QIcon(':/icon.ico'))
         self.setGeometry(100, 100, 1000, 700)
 
         # Set style
